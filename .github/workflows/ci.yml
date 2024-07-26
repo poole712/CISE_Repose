@@ -1,4 +1,5 @@
 name: CI_action
+
 on:
   push:
     branches: [main] 
@@ -10,7 +11,8 @@ Jobs:
 
     strategy:
       matrix:
-        node-version: [12.x)
+        node-version: [12.x]
+        
   steps:
     - name: Checkout repository
       uses: actions/checkout@v2
